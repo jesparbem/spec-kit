@@ -1,0 +1,10 @@
+# Backend
+backend/.env
+backend/factory.db
+backend/workspaces/
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
