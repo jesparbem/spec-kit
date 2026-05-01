@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0e1a;
+  --foreground: #e5e7eb;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* React Flow overrides */
+.react-flow__attribution {
+  display: none;
+}
+
+/* Prose overrides for dark mode */
+.prose pre {
+  background: #1a1f2e !important;
+  border: 1px solid #1f2937;
+}
+.prose code {
+  color: #a78bfa;
+}
+.prose a {
+  color: #818cf8;
+}
+.prose h1, .prose h2, .prose h3 {
+  color: #f3f4f6;
+}
+.prose p, .prose li {
+  color: #d1d5db;
+}
+.prose strong {
+  color: #f9fafb;
+}
+.prose blockquote {
+  border-left-color: #6366f1;
+  color: #9ca3af;
+}
+.prose table {
+  color: #d1d5db;
+}
+.prose th {
+  color: #f3f4f6;
+}
+.prose hr {
+  border-color: #374151;
+}
