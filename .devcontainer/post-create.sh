@@ -111,4 +111,16 @@ echo -e "\n🧹 Cleaning cache..."
 run_command "sudo apt-get autoclean"
 run_command "sudo apt-get clean"
 
+echo -e "\n🏭 Installing Software Factory backend dependencies..."
+run_command "pip install -r web-factory/backend/requirements.txt"
+echo "✅ Done"
+
+echo -e "\n🏭 Installing Software Factory frontend dependencies..."
+run_command "npm install --prefix web-factory/frontend"
+echo "✅ Done"
+
 echo "✅ Setup completed. Happy coding! 🚀"
+echo ""
+echo "🏭 To start the Software Factory:"
+echo "   cd web-factory && bash start.sh"
+echo "   Then set your ANTHROPIC_API_KEY in web-factory/backend/.env"

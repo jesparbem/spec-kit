@@ -28,8 +28,14 @@
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
-	8080 // for Spec-Kit documentation site
+	8080, // for Spec-Kit documentation site
+	3000, // Software Factory frontend
+	8000  // Software Factory backend API
   ],
+  "portsAttributes": {
+    "3000": { "label": "Factory Frontend", "onAutoForward": "openBrowser" },
+    "8000": { "label": "Factory API", "onAutoForward": "notify" }
+  },
   "containerUser": "devcontainer",
   "updateRemoteUserUID": true,
   "postCreateCommand": "chmod +x ./.devcontainer/post-create.sh && ./.devcontainer/post-create.sh",
